@@ -10,7 +10,7 @@ function Row({ id, item }) {
   return (
     <tr id={id}>
       <td className='table__row-date'>{date(item.date)}</td>
-      <td className='table__row-distance'>{+item.distance.toFixed(1)}</td>
+      <td className='table__row-distance'>{item.distance}</td>
       <td className='table__row-actions'>
         <button className='actions__button edit-button' name='edit-button' type='button'>
           <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
